@@ -14,6 +14,7 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded());
 
 app.get('/:id', (req, res) => {
   res.send('hooo');

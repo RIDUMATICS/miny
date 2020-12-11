@@ -1,13 +1,13 @@
-import mongoose, { Schema } from 'mongoose';
+import mongoose from 'mongoose';
 
-const minySchema = new Schema({
+const minySchema = new mongoose.Schema({
   url: {
     type: String,
     required: true,
   },
   slug: {
     type: String,
-    maxlength: 5,
+    unique: true,
     required: true,
   },
   hit: {
@@ -20,4 +20,4 @@ const minySchema = new Schema({
   }
 });
 
-export default mongoose.model('miny', minySchema);
+export default mongoose.model('urls', minySchema);
