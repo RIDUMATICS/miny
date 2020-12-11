@@ -9,6 +9,7 @@ module.exports = {
     'no-param-reassign': 0,
     'no-return-assign': 0,
     'linebreak-style': 0,
+    'import/extensions': 0,
     camelcase: 0,
   }
 };
