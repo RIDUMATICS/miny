@@ -1,22 +1,9 @@
 import express from 'express';
 import { nanoid } from 'nanoid';
-import yup from 'yup';
 import Miny from '../model/miny.js';
+import { schema, slugSchema } from '../util/validation';
 
 const router = express.Router();
-const slugMessage = 'slug consisting only of non-whitespaces use (Underscore and Dash Is allowed)';
-const schema = yup.object().shape({
-  slug: yup.string().trim().matches(/^[a-zA-Z0-9_-]*$/i, {
-    message: slugMessage
-  }),
-  url: yup.string().trim().url()
-});
-
-const slugSchema = yup.object().shape({
-  slug: yup.string().trim().matches(/^[a-zA-Z0-9_-]*$/i, {
-    message: slugMessage
-  }),
-});
 
 // Create a short url
 router.post('/url', async (req, res, next) => {
