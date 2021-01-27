@@ -25,7 +25,7 @@
         <label for="slug" class="sr-only">slug</label>
         <div class="input-group mb-2">
           <div class="input-group-prepend">
-            <div class="input-group-text">https://miny.herokuapp.com/</div>
+            <div class="input-group-text">https://miny-url.herokuapp.com/</div>
           </div>
           <input type="text" v-model="slug" class="form-control" id="slug" placeholder="Custom slug (OPTIONAL)">
         </div>  
@@ -61,7 +61,6 @@ export default {
 
   methods:{
     async showInfo(message, status, data){
-      console.log(message);
       this.success.message = message;
       this.success.status = status;
       this.$emit('new_url', data);

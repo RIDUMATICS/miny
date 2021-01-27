@@ -7,7 +7,7 @@
       <section class="mx-3 mx-md-0 mx-lg-5">
         <div class="row">
           <h1 class="mx-auto my-4" id="logo">
-          <router-link to="/">Miny <font-awesome-icon :icon="faLink" /></router-link></h1>
+          <router-link to="/">Miny-URL <font-awesome-icon :icon="faLink" /></router-link></h1>
         </div>
         <router-view v-on:new_url="storeData" :data="data"/>
       </section>
