@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const minySchema = new mongoose.Schema({
   url: {
@@ -14,10 +14,16 @@ const minySchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
+  lastVisit: {
+    type: Date,
+  },
+  minyUrl: {
+    type: String,
+  },
   createdOn: {
     type: Date,
     default: new Date(),
   }
 });
 
-export default mongoose.model('urls', minySchema);
+module.exports = mongoose.model('urls', minySchema);

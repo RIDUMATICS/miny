@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-import mongoose from 'mongoose';
-import app from './app.js';
+const mongoose = require('mongoose');
+const app = require('./app.js');
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
