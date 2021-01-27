@@ -95,7 +95,8 @@ router.get('/url/:slug', async (req, res, next) => {
 // Redirect to url
 router.get('/:slug', async (req, res, next) => {
   try {
-    const slug = req.params.slug.trim();
+    const slug = req.params.slug.trim() || '';
+    console.log(req.params);
     await slugSchema.validate({ slug });
     const minyUrl = await Miny.findOne({ slug });
     if (minyUrl) {
