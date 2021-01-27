@@ -10,7 +10,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/ui/stats',
+    path: '/stats',
     name: 'URLDetails',
     component: URLDetails
   },

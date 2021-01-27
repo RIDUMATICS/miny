@@ -18,7 +18,7 @@
             <h2>Miny URL</h2>
           </div>
           <div class="card-body miny_url">
-            <p>miny.netlify.app/{{ data.slug }}</p>  <a :href='data.slug' target="_blank" class="btn btn-sm btn-success" type="submit" id="submit" role="button">open</a>
+            <p>miny.herokuapp.com/{{ data.slug }}</p>  <a :href='data.slug' target="_blank" class="btn btn-sm btn-success" type="submit" id="submit" role="button">open</a>
           </div>
         </div>
         <div class="card col-lg-12 p-0">

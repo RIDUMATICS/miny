@@ -25,7 +25,7 @@
         <label for="slug" class="sr-only">slug</label>
         <div class="input-group mb-2">
           <div class="input-group-prepend">
-            <div class="input-group-text">https://miny.netlify.app/</div>
+            <div class="input-group-text">https://miny.herokuapp.com/</div>
           </div>
           <input type="text" v-model="slug" class="form-control" id="slug" placeholder="Custom slug (OPTIONAL)">
         </div>  
