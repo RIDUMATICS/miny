@@ -10,7 +10,7 @@ const api = require('./api/index.js');
 dotenv.config();
 
 const app = express();
-const staticFileMiddleware = express.static(path.join(__dirname, 'dist'));
+const staticFileMiddleware = express.static(path.join(__dirname, 'dist/'));
 
 app.use(morgan('dev'));
 app.use(helmet());
