@@ -1,5 +1,5 @@
 # Miny or Miny-URL 🔗😲
-> Shopper is an implementation of a URL shortner in MongoDB, Vue.js, and Express which makes it easy to shorten your URL's. 
+> Miny-URL is an implementation of a URL shortner in MongoDB, Vue.js, and Express which makes it easy to shorten your URL's. 
 
 > How does it work tho?  
 - Miny generates shorter slug or uses the given slug which it then use in a database
